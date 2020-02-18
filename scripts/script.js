@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
     $('#getMovements').click(function () {
         $.ajax({
-            url: 'api.php/position',
+            url: 'api.php/move',
             type: 'get',
             success: function (response) {
                 console.log(response);

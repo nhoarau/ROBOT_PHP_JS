@@ -1,7 +1,5 @@
 <?php 
 
-include_once 'Models/MoveEnum.php';
-
 class MoveController {
     function get() {
         $randomMoves = [];
