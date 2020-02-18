@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="styles/styles.css">
 <script src="scripts/script.js"></script>
+<script src="scripts/jquery.js"></script>
 <div class="grid">
     <?php for ($i = 0; $i < 10; $i++): ?>
         <div class="row">
@@ -10,5 +11,10 @@
             <?php endfor; ?>
         </div>
     <?php endfor; ?>
+</div>
+<div class="footer">
+    <button id="getPosition">Nouvelle position</button>
+    <button id="getMovements">Récupérer séquence de déplacement</button>
+    <button id="launchMovements">Lancer déplacement</button>
 </div>
 
