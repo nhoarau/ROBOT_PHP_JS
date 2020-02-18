@@ -61,4 +61,16 @@ $(document).ready(function () {
             }
         })
     })
+
+
+    function saveCoordonate(positionArray) {
+        $.ajax({
+            url: 'api.php/position',
+            type: 'post',
+            data: {positionArray},
+            success: function (response) {
+              
+            }
+        });
+    }
 });
