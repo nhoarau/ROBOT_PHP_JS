@@ -8,7 +8,7 @@
                 <div class="row">
                     <?php for ($j = 0; $j < 10; $j++): ?>
                         <div class="cell" id="<?php echo $i . $j; ?>">
-                            <div class="cellContent"><?php echo $i . $j; ?></div>
+                            <!-- <div class="cellContent"><?php echo $i . $j; ?></div> -->
                         </div>
                     <?php endfor; ?>
                 </div>
@@ -17,6 +17,7 @@
         <div class="footer">
             <button id="getPosition">Nouvelle position</button>
             <button id="launchMovements">Lancer déplacement</button>
+            <button id="reset">Réinitialiser</button>
         </div>
     </div>
     <div class="legendAndInfo">

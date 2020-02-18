@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let sequence;
     let positionArray;
-    let logValue = [];
+    let logValue;
     $('#getPosition').click(function () {
         $('#log').empty();
         $.ajax({
@@ -88,6 +88,12 @@ $(document).ready(function () {
         })
     })
 
+    $('#reset').click(function () {
+        $('#log').empty();
+        sequence = null;
+        positionArray = null;
+        $('.cell').css('border', '1px solid black');
+    });
 
     function saveCoordonate(positionArray) {
         $.ajax({

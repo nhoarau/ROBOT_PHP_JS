@@ -1,7 +1,6 @@
 .grid{
     display: flex;
     flex-direction: column-reverse;
-    height: 100%;
     width: 100%;
 }
 .gridAndButtons{
@@ -15,7 +14,8 @@
 }
 .cell{
     border: 1px solid black;
-    width: 24%;
+    width: 3em;
+    height: 3em;
     margin: 0.2%;
     justify-content: center;
     display: flex;
@@ -23,8 +23,9 @@
 }
 .mainLayout{
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
+    margin: 2%;
 }
 .legendAndInfo{
     margin: 0.3em;
