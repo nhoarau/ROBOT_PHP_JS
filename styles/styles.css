@@ -1,0 +1,16 @@
+.grid{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+}
+.row{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.cell{
+    border: 1px solid red;
+    width: 24%;
+    margin: 1%;
+}
