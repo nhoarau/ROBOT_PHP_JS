@@ -24,32 +24,32 @@ $(document).ready(function () {
                         let position;
                         switch (element) {
                             case 0:
-                                $('.cell').css('border', '1px solid black');
                                 if (positionArray['y'] < 9) {
+                                    $('.cell').css('border', '1px solid black');
                                     positionArray['y']++;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
                                 }
                                 break;
                             case 1:
-                                $('.cell').css('border', '1px solid black');
                                 if (positionArray['x'] < 9) {
+                                    $('.cell').css('border', '1px solid black');
                                     positionArray['x']++;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
                                 }
                                 break;
                             case 2 :
-                                $('.cell').css('border', '1px solid black');
                                 if (positionArray['y'] > 0) {
+                                    $('.cell').css('border', '1px solid black');
                                     positionArray['y']--;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
                                 }
                                 break;
                             case 3:
-                                $('.cell').css('border', '1px solid black');
                                 if (positionArray['x'] > 0) {
+                                    $('.cell').css('border', '1px solid black');
                                     positionArray['x']--;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
