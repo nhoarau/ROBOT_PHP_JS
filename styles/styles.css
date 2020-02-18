@@ -1,0 +1,19 @@
+.grid{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90%;
+    width: 90%;
+}
+.row{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.cell{
+    border: 1px solid black;
+    width: 24%;
+    margin: 0.2%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
