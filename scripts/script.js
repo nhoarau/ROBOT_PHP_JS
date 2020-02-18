@@ -4,7 +4,10 @@ $(document).ready(function () {
             url: 'api.php/coordonate',
             type: 'get',
             success: function (response) {
-                console.log(JSON.parse(response));
+                parsedResponse = JSON.parse(response);
+                $('.cell').css('border', '1px solid black');
+                const position =  parsedResponse['y'].toString() + parsedResponse['x'].toString();
+                $('#'+position).css('border', '2px solid red');
             }
         });
     });
