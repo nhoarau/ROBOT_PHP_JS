@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="styles/styles.css">
-<script src="scripts/script.js"></script>
 <script src="scripts/jquery.js"></script>
+<script src="scripts/script.js"></script>
 <div class="grid">
     <?php for ($i = 0; $i < 10; $i++): ?>
         <div class="row">

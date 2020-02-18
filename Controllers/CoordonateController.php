@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 include_once 'Models/Coordonate.php';
 
-class CoordonateController {
+class CoordonateController
+{
     function get()
     {
-       $y = rand(0,10);
-       $x = rand(0,10);
-
-       $coordonate = new Coordonate($y, $x);
-       var_dump($coordonate);
+        $y = rand(0, 9);
+        $x = rand(0, 9);
+        $coordonate = new Coordonate($y, $x);
+        echo json_encode($coordonate);
     }
 }

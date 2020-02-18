@@ -6,7 +6,6 @@ class ControllerFactory
     {
         $controllerName = ucfirst($ressourceName) . "Controller";
         $file = "Controllers/" . $controllerName . ".php";
-        var_dump($file);
         if (!file_exists($file)) {
             throw new Exception("Ressource {$ressourceName} doesn't exist");
         }
