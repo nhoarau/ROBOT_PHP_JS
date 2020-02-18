@@ -1,7 +1,9 @@
 $(document).ready(function () {
     let sequence;
     let positionArray;
+    let logValue = [];
     $('#getPosition').click(function () {
+        $('#log').empty();
         $.ajax({
             url: 'api.php/coordonate',
             type: 'get',
@@ -29,6 +31,12 @@ $(document).ready(function () {
                                     positionArray['y']++;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
+                                    saveCoordonate(positionArray);
+                                    logValue = "<div>UP " + positionArray['y'] + ":" + positionArray['x'] + "</div>";
+                                    $("#log").append(logValue);
+                                } else {
+                                    logValue = "<div> Error ! can't move Up</div>";
+                                    $("#log").append(logValue);
                                 }
                                 break;
                             case 1:
@@ -37,6 +45,12 @@ $(document).ready(function () {
                                     positionArray['x']++;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
+                                    saveCoordonate(positionArray);
+                                    logValue = "<div>RIGHT " + positionArray['y'] + ":" + positionArray['x'] + "</div>";
+                                    $("#log").append(logValue);
+                                } else {
+                                    logValue = "<div> Error ! can't move to right</div>";
+                                    $("#log").append(logValue);
                                 }
                                 break;
                             case 2 :
@@ -45,6 +59,12 @@ $(document).ready(function () {
                                     positionArray['y']--;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
+                                    saveCoordonate(positionArray);
+                                    logValue = "<div>DOWN " + positionArray['y'] + ":" + positionArray['x'] + "</div>";
+                                    $("#log").append(logValue);
+                                } else {
+                                    logValue = "<div> Error ! can't move down</div>";
+                                    $("#log").append(logValue);
                                 }
                                 break;
                             case 3:
@@ -53,6 +73,12 @@ $(document).ready(function () {
                                     positionArray['x']--;
                                     position = positionArray['y'].toString() + positionArray['x'].toString();
                                     $('#' + position).css('border', '2px solid red');
+                                    saveCoordonate(positionArray);
+                                    logValue = "<div>LEFT " + positionArray['y'] + ":" + positionArray['x'] + "</div>";
+                                    $("#log").append(logValue);
+                                } else {
+                                    logValue = "<div> Error ! can't move to the left</div>";
+                                    $("#log").append(logValue);
                                 }
                                 break;
                         }

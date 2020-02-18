@@ -23,6 +23,9 @@
         <div id="robotPosition">
             <div class="robotPositionDrawing"></div>
             <div class="robotPositionLabel"> = Position du robot</div>
+            
+        </div>
+        <div id="log">
         </div>
     </div>
 </div>
