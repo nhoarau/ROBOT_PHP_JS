@@ -16,7 +16,6 @@
         </div>
         <div class="footer">
             <button id="getPosition">Nouvelle position</button>
-            <button id="getMovements">Récupérer séquence de déplacement</button>
             <button id="launchMovements">Lancer déplacement</button>
         </div>
     </div>
